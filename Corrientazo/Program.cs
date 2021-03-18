@@ -8,47 +8,68 @@ namespace Corrientazo
     {
         static void Main(string[] args)
         {
-            Dron dron = new Dron(0,0,0);
-            //Console.WriteLine("----"+dron.PuntoCardinal+"----");
-            string[] instrucciones = { "A", "A", "A", "A", "I", "A", "A" };
-            //string[] instrucciones = { "I", "D", "I", "D", "I", "D", "I" };
-            Ruta ruta = new Ruta();
-            /*dron = ruta.CalcularRuta(instrucciones, dron);
+           
+            int iterations = Int32.Parse(args[0]);
+            string inputNumber, inputFileName, inputPath, outputPath, outputFileName;
 
-
-            Console.WriteLine("Punto Cardinal: " + dron.PuntoCardinal );
-            Console.WriteLine("Posicion en X: " + dron.XPosition);
-            Console.WriteLine("Posicion en Y: " + dron.YPosition);*/
-
-
-            string fileName = "prueba.txt.txt";
-
-            string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, fileName);
-            using StreamWriter outputFile = new StreamWriter(@"C:\Users\suaosc01\source\repos\Corrientazo\Corrientazo\bin\Debug\netcoreapp3.1\output.txt",append: true);
-
-
-            using (var reader = new StreamReader(path))
-                //using (FileStream writer = File.OpenWrite(@"C:\Users\suaosc01\source\repos\Corrientazo\Corrientazo\bin\Debug\netcoreapp3.1\output.txt"))
             
 
+            Console.WriteLine(args[0]);
+            
+
+            
+            Ruta ruta = new Ruta();
+            FileHandler fileHandler = new FileHandler();
+            
+
+            for (int i=0; i<iterations; i++)
             {
-                string line;
-                while ((line = reader.ReadLine()) != null)
+                Dron dron = new Dron(0, 0, 0);
+                if ((iterations) < 9)
+                    inputNumber = "0" + (i+1);
+                else
+                    inputNumber = (i+1).ToString();
+                inputFileName = "entrega" + inputNumber + ".txt.txt";
+                outputFileName = "out" + inputNumber + ".txt";
+                inputPath = Path.Combine(Environment.CurrentDirectory, inputFileName);
+                outputPath = Path.Combine(Environment.CurrentDirectory, outputFileName);
+                if (File.Exists(outputPath))
                 {
-                    // Do stuff with your line here, it will be called for each 
-                    // line of text in your file.
-                    Console.WriteLine(line);
-                    char[] line2 = line.ToCharArray();
-                    dron = ruta.CalcularRuta(line2,dron);
-                    Console.WriteLine("Punto Cardinal: " + dron.PuntoCardinal);
-                    Console.WriteLine("Posicion en X: " + dron.XPosition);
-                    Console.WriteLine("Posicion en Y: " + dron.YPosition);
-                    byte[] buffer = new Byte[1024];
-                    //writer.writeLine("");
-                    outputFile.WriteLineAsync("("+dron.XPosition+","+dron.YPosition+") direccion"+dron.PuntoCardinal);
+                    File.Delete(outputPath);
+                }
+                //using StreamWriter outputFile = new StreamWriter(outputPath, append: true);
+
+                using (var reader = new StreamReader(inputPath))
+                {
+                    string line;
+                    while ((line = reader.ReadLine()) != null)
+                    {
+                        // Do stuff with your line here, it will be called for each 
+                        // line of text in your file.
+                        Console.WriteLine(line);
+                        char[] line2 = line.ToCharArray();
+                        dron = ruta.CalcularRuta(line2, dron);
+                        Console.WriteLine("Punto Cardinal: " + dron.PuntoCardinal);
+                        Console.WriteLine("Posicion en X: " + dron.XPosition);
+                        Console.WriteLine("Posicion en Y: " + dron.YPosition);
+
+
+                        fileHandler.CreateOutputFile(i + 1, dron, outputPath);
+                    }
 
                 }
+                
+
             }
+
+            
+
+            
+
+            
+
+
+            
         }
     }
 }

@@ -23,8 +23,7 @@ namespace Corrientazo
             
             foreach (var item in instructions)
             {
-                //Console.WriteLine(ProcessOrientationChange(initial,item));
-                //initial = ProcessOrientationChange(initial, item);
+         
 
                 Console.WriteLine("Procesando " + item);
 
