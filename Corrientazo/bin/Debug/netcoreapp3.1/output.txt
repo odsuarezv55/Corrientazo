@@ -1,0 +1,3 @@
+(-2,4) direccionW
+(-1,3) direccionS
+(0,0) direccionW

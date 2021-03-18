@@ -1,0 +1,13 @@
+C:\Users\suaosc01\source\repos\Corrientazo\Corrientazo\bin\Debug\netcoreapp3.1\Corrientazo.exe
+C:\Users\suaosc01\source\repos\Corrientazo\Corrientazo\bin\Debug\netcoreapp3.1\Corrientazo.deps.json
+C:\Users\suaosc01\source\repos\Corrientazo\Corrientazo\bin\Debug\netcoreapp3.1\Corrientazo.runtimeconfig.json
+C:\Users\suaosc01\source\repos\Corrientazo\Corrientazo\bin\Debug\netcoreapp3.1\Corrientazo.runtimeconfig.dev.json
+C:\Users\suaosc01\source\repos\Corrientazo\Corrientazo\bin\Debug\netcoreapp3.1\Corrientazo.dll
+C:\Users\suaosc01\source\repos\Corrientazo\Corrientazo\bin\Debug\netcoreapp3.1\Corrientazo.pdb
+C:\Users\suaosc01\source\repos\Corrientazo\Corrientazo\obj\Debug\netcoreapp3.1\Corrientazo.csprojAssemblyReference.cache
+C:\Users\suaosc01\source\repos\Corrientazo\Corrientazo\obj\Debug\netcoreapp3.1\Corrientazo.AssemblyInfoInputs.cache
+C:\Users\suaosc01\source\repos\Corrientazo\Corrientazo\obj\Debug\netcoreapp3.1\Corrientazo.AssemblyInfo.cs
+C:\Users\suaosc01\source\repos\Corrientazo\Corrientazo\obj\Debug\netcoreapp3.1\Corrientazo.csproj.CoreCompileInputs.cache
+C:\Users\suaosc01\source\repos\Corrientazo\Corrientazo\obj\Debug\netcoreapp3.1\Corrientazo.dll
+C:\Users\suaosc01\source\repos\Corrientazo\Corrientazo\obj\Debug\netcoreapp3.1\Corrientazo.pdb
+C:\Users\suaosc01\source\repos\Corrientazo\Corrientazo\obj\Debug\netcoreapp3.1\Corrientazo.genruntimeconfig.cache
