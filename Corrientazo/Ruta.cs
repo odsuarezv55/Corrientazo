@@ -17,9 +17,16 @@ namespace Corrientazo
         }*/
 
         public DictionaryInstructions dictionary = new DictionaryInstructions();
-        public Dron CalcularRuta(char[] instructions, Dron dron)
+        public Dron CalcularRuta(char[] instructions, Dron dron, int range)
         {
             //string initial = "N";
+            char[] allowed = { 'A', 'I', 'D' };
+
+            if (instructions.Any(c=>!allowed.Contains(c)))
+            {
+                dron.error = "Caracter no permitido";
+                return dron;
+            }
             
             foreach (var item in instructions)
             {
@@ -39,6 +46,15 @@ namespace Corrientazo
                     Console.WriteLine("Not valid instruction");
 
             }
+
+            if (dron.XPosition > range || dron.XPosition < -(range) || dron.YPosition > range || dron.YPosition < -(range))
+            {
+                
+                string error = "Ruta fuera del rango permitido en punto ("+dron.XPosition+","+dron.YPosition+")";
+                dron.error = error;
+            }
+                
+
             return dron;
            
         }

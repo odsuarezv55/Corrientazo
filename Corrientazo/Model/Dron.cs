@@ -9,6 +9,7 @@ namespace Corrientazo.Model
         public int XPosition { get; set; }
         public int YPosition { get; set; }
         public Orientacion PuntoCardinal { get; set; }
+        public string error { get; set; }
         public Dron(int XPosition, int YPosition, Orientacion PuntoCardinal)
         {
             this.XPosition = XPosition;
