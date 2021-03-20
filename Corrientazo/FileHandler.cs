@@ -10,15 +10,9 @@ namespace Corrientazo
     {
         public Boolean CreateOutputFile(int iteration, Dron dron, string outpuPath)
         {
-            
-            string outputNumber;
+
             string direccion="";
             
-
-            if (iteration < 10)
-                outputNumber = "0" + iteration;
-            else
-                outputNumber = iteration.ToString();
 
 
             using StreamWriter outputFile = new StreamWriter(outpuPath, append: true);
@@ -56,11 +50,7 @@ namespace Corrientazo
             Console.WriteLine("Punto Cardinal: " + dron.PuntoCardinal);
             Console.WriteLine("Posicion en X: " + dron.XPosition);
             Console.WriteLine("Posicion en Y: " + dron.YPosition);
-            //outpuPath = "C:\\Users\\suaosc01\\source\\repos\\Corrientazo\\Corrientazo\\bin\\Debug\\netcoreapp3.1\\out" + outputNumber + ".txt";
-            
-
-            
-            //outputFile.WriteLineAsync("(" + dron.XPosition + "," + dron.YPosition + ") direccion " + direccion);
+    
             outputFile.WriteLine("(" + dron.XPosition + "," + dron.YPosition + ") direccion " + direccion);
             outputFile.Close();
 

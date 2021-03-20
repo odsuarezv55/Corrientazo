@@ -9,18 +9,12 @@ namespace Corrientazo
 {
     public class Ruta
     {
-        //private readonly string[] instructions;
-        /*
-        public Ruta(string[] instructions)
-        {
-            this.instructions = instructions;
-        }*/
 
         public DictionaryInstructions dictionary = new DictionaryInstructions();
         public Dron CalcularRuta(string instructions, Dron dron, int range)
         {
             char[] charInstructions = instructions.ToCharArray();
-            //string initial = "N";
+    
             char[] allowed = { 'A', 'I', 'D' };
 
             if (charInstructions.Any(c=>!allowed.Contains(c)))
@@ -43,8 +37,7 @@ namespace Corrientazo
                     Console.WriteLine("Cambio a sentido "+dron.PuntoCardinal);
                 }
                     
-                else
-                    Console.WriteLine("Not valid instruction");
+             
 
             }
 
