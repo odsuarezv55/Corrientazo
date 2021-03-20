@@ -17,18 +17,19 @@ namespace Corrientazo
         }*/
 
         public DictionaryInstructions dictionary = new DictionaryInstructions();
-        public Dron CalcularRuta(char[] instructions, Dron dron, int range)
+        public Dron CalcularRuta(string instructions, Dron dron, int range)
         {
+            char[] charInstructions = instructions.ToCharArray();
             //string initial = "N";
             char[] allowed = { 'A', 'I', 'D' };
 
-            if (instructions.Any(c=>!allowed.Contains(c)))
+            if (charInstructions.Any(c=>!allowed.Contains(c)))
             {
                 dron.error = "Caracter no permitido";
                 return dron;
             }
             
-            foreach (var item in instructions)
+            foreach (var item in charInstructions)
             {
          
 

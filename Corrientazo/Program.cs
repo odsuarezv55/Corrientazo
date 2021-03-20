@@ -62,8 +62,8 @@ namespace Corrientazo
 
                         
                         Console.WriteLine(line);
-                        char[] line2 = line.ToCharArray();
-                        dron = ruta.CalcularRuta(line2, dron, cuadras);
+                        
+                        dron = ruta.CalcularRuta(line, dron, cuadras);
 
                         rutaValida = fileHandler.CreateOutputFile(i + 1, dron, outputPath);
                         if (rutaValida == false)

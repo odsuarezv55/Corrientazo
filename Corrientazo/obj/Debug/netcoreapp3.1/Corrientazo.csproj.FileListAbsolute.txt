@@ -4,10 +4,14 @@ C:\Users\suaosc01\source\repos\Corrientazo\Corrientazo\bin\Debug\netcoreapp3.1\C
 C:\Users\suaosc01\source\repos\Corrientazo\Corrientazo\bin\Debug\netcoreapp3.1\Corrientazo.runtimeconfig.dev.json
 C:\Users\suaosc01\source\repos\Corrientazo\Corrientazo\bin\Debug\netcoreapp3.1\Corrientazo.dll
 C:\Users\suaosc01\source\repos\Corrientazo\Corrientazo\bin\Debug\netcoreapp3.1\Corrientazo.pdb
-C:\Users\suaosc01\source\repos\Corrientazo\Corrientazo\obj\Debug\netcoreapp3.1\Corrientazo.csprojAssemblyReference.cache
+C:\Users\suaosc01\source\repos\Corrientazo\Corrientazo\bin\Debug\netcoreapp3.1\xunit.abstractions.dll
+C:\Users\suaosc01\source\repos\Corrientazo\Corrientazo\bin\Debug\netcoreapp3.1\xunit.assert.dll
+C:\Users\suaosc01\source\repos\Corrientazo\Corrientazo\bin\Debug\netcoreapp3.1\xunit.core.dll
+C:\Users\suaosc01\source\repos\Corrientazo\Corrientazo\bin\Debug\netcoreapp3.1\xunit.execution.dotnet.dll
 C:\Users\suaosc01\source\repos\Corrientazo\Corrientazo\obj\Debug\netcoreapp3.1\Corrientazo.AssemblyInfoInputs.cache
 C:\Users\suaosc01\source\repos\Corrientazo\Corrientazo\obj\Debug\netcoreapp3.1\Corrientazo.AssemblyInfo.cs
 C:\Users\suaosc01\source\repos\Corrientazo\Corrientazo\obj\Debug\netcoreapp3.1\Corrientazo.csproj.CoreCompileInputs.cache
+C:\Users\suaosc01\source\repos\Corrientazo\Corrientazo\obj\Debug\netcoreapp3.1\Corrientazo.csproj.CopyComplete
 C:\Users\suaosc01\source\repos\Corrientazo\Corrientazo\obj\Debug\netcoreapp3.1\Corrientazo.dll
 C:\Users\suaosc01\source\repos\Corrientazo\Corrientazo\obj\Debug\netcoreapp3.1\Corrientazo.pdb
 C:\Users\suaosc01\source\repos\Corrientazo\Corrientazo\obj\Debug\netcoreapp3.1\Corrientazo.genruntimeconfig.cache
