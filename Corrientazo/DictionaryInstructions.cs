@@ -7,18 +7,9 @@ namespace Corrientazo
 {
     public class DictionaryInstructions
     {
-        public IDictionary<string, string> instructionResult = new Dictionary<string, string>() {
-            {"ND","E" },
-            {"NI","W" },
-            {"WD","N" },
-            {"WI","S" },
-            {"ED","S" },
-            {"EI","N" },
-            {"SD","W" },
-            {"SI","E" }
-        };
+        
 
-        public IDictionary<string, Orientacion> instructionResult2 = new Dictionary<string, Orientacion>() {
+        public IDictionary<string, Orientacion> instructionResult = new Dictionary<string, Orientacion>() {
             {"ND",Orientacion.E },
             {"NI",Orientacion.W },
             {"WD",Orientacion.N },

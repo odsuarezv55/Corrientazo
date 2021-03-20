@@ -56,7 +56,7 @@ namespace Corrientazo
         public Orientacion ProcessOrientationChange(Orientacion intialOrientation, string instruction)
         {   
          
-            return dictionary.instructionResult2[intialOrientation + instruction];
+            return dictionary.instructionResult[intialOrientation + instruction];
         }
         public Dron ProcessStep(Dron dron)
         {
