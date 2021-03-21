@@ -17,6 +17,7 @@ namespace Corrientazo
     
             char[] allowed = { 'A', 'I', 'D' };
 
+            //Invalid character flag
             if (charInstructions.Any(c=>!allowed.Contains(c)))
             {
                 dron.error = "Caracter no permitido";
@@ -41,6 +42,8 @@ namespace Corrientazo
 
             }
 
+
+            // invalid route flag
             if (dron.XPosition > range || dron.XPosition < -(range) || dron.YPosition > range || dron.YPosition < -(range))
             {
                 

@@ -1,0 +1,1 @@
+Input and output files loacted in ..\Corrientazo\Corrientazo\bin\Debug\netcoreapp3.1
